@@ -5,7 +5,7 @@
   <table>
     <thead>
       <tr>
-        <th align="left">Fenrir1011 / Drun</th>
+        <th align="left">KiloFarsh</th>
         <th align="right">│⠀⠀🗕⠀⠀│⠀⠀🗗⠀⠀│⠀⠀🗙⠀⠀│</th>
       </tr>
     </thead>
