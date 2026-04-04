@@ -2,7 +2,7 @@
 
 # 👨‍💻 My Development Stack
 
-<table border="0">
+<table border="12">
   <tr>
     <td bgcolor="#1A1B27">
       <p align="center">
