@@ -31,7 +31,7 @@
   </table>
  <br>
 
-  <h2>🐍 Contribution Snake</h2>
+  <h2>🐍 Contribution</h2>
   <img src="https://raw.githubusercontent.com/Fenrir1011/Fenrir1011/output/github-contribution-grid-snake-dark.svg" width="100%" />
 
   <br>
