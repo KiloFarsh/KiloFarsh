@@ -1,6 +1,6 @@
 <div align="center">
 
-<table width="600px">
+<table width="1000px">
   <tr>
     <td bgcolor="#0d1117" style="border: 1px solid #30363d;">
       <table width="100%">
