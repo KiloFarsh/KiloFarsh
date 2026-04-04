@@ -1,40 +1,45 @@
 <div align="center">
 
-# 🌌 Fenrir1011 System Core
+# 📜 Старославянский Переводчик
 ---
 
 <table border="0">
   <tr>
-    <td align="center" width="700px" style="background: linear-gradient(180deg, #0d1117 0%, #161b22 100%); border: 2px solid #58a6ff; border-radius: 15px; padding: 20px;">
+    <td align="center" width="750px" style="background: #0d1117; border: 1px solid #e3b341; border-radius: 10px; padding: 20px;">
+      <p align="right"><code><b>ВЕРСИЯ: <font color="#e3b341">1.0.ARCHAIC</font></b></code></p>
+      
+      <h2 align="center"><font color="#e3b341">Системное ядро переводчика</font></h2>
       <br>
-      <p align="right"><code><b>STATUS: <font color="#7ef129">ONLINE</font></b></code> &nbsp; </p>
-      
-      <h2 align="center">⚙️ ARCHITECTURE</h2>
-      
+
       <p align="center">
-        <img src="https://skillicons.dev/icons?i=lua,python&theme=dark" />
-        <br><br>
-        <img src="https://skillicons.dev/icons?i=linux,git&theme=dark" />
+        <img src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/UI-CustomTkinter-blueviolet?style=for-the-badge" />
+        <img src="https://img.shields.io/badge/Data-JSON-lightgrey?style=for-the-badge&logo=json" />
       </p>
 
       <br>
-      
-      <div align="left" style="width: 80%; margin-left: 10%;">
-        <code><b>LUA   </b></code> <img src="https://geps.dev/progress/85?dangerColor=58a6ff&warningColor=58a6ff&successColor=58a6ff" width="250px" /> <br>
-        <code><b>PY    </b></code> <img src="https://geps.dev/progress/70?dangerColor=58a6ff&warningColor=58a6ff&successColor=58a6ff" width="250px" /> <br>
-        <code><b>LINUX </b></code> <img src="https://geps.dev/progress/90?dangerColor=58a6ff&warningColor=58a6ff&successColor=58a6ff" width="250px" />
+      <div align="left" style="width: 85%; margin-left: 7%;">
+        <code><b>СЛОВАРЬ (JSON) </b></code> <img src="https://geps.dev/progress/45?dangerColor=e3b341&warningColor=e3b341&successColor=e3b341" width="300px" /> <br>
+        <code><b>ЛОГИКА (PY)   </b></code> <img src="https://geps.dev/progress/90?dangerColor=e3b341&warningColor=e3b341&successColor=e3b341" width="300px" /> <br>
+        <code><b>ИНТЕРФЕЙС    </b></code> <img src="https://geps.dev/progress/75?dangerColor=e3b341&warningColor=e3b341&successColor=e3b341" width="300px" />
       </div>
 
-      <br><br>
+      <br>
       <p align="center">
-        <code><b>--- END OF DATA ---</b></code>
+        <img src="https://skillicons.dev/icons?i=python,linux,git,vscode" />
       </p>
+      
+      <br>
+      <code><b>--- КОНЕЦ ЗАПИСИ ---</b></code>
     </td>
   </tr>
 </table>
 
 <br>
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Fenrir1011&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117)
+### 🛠 Как запустить сие творение:
+1. Скачайте `app.exe` из [Google Диска](https://drive.google.com/drive/folders/1IBGbk-E14TmXeZy1O1M86htdpD7Fhath)
+2. Либо клонируйте репозиторий:
+`git clone https://github.com/Fenrir1011/Translator-of-Old-Slavonic.git`
 
 </div>
