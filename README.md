@@ -4,16 +4,17 @@
 
 <table border="0">
   <tr>
-    <td bgcolor="#1A1B27">
-      <img src="https://capsule-render.vercel.app/render?type=rect&color=24292e&height=35&text=Drun%20Terminal&fontSize=20" width="100%" />
-      <br><br>
-      <p align="center">
-        <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" />
-        <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" />
-        <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
-        <img src="https://img.shields.io/badge/json-5E5E5E?style=for-the-badge&logo=json&logoColor=white" />
-      </p>
+    <td bgcolor="#161b22" align="center">
+      <code><b>Drun @ Terminal: ~ / tech-stack</b></code> 
       <br>
+      ─── 🔴 🟡 🟢 ───
+      <br><br>
+      <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+      <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+      <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
+      <img src="https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white" />
+      <br><br>
+      <code><b>[####################] 100% Loaded</b></code>
     </td>
   </tr>
 </table>
