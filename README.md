@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://capsule-render.vercel.app/render?type=waving&color=33ccff&height=180&section=header&text=Drun&fontSize=90" width="100%" />
+
 
   <table>
     <thead>
