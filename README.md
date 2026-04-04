@@ -25,9 +25,9 @@
           <img width="15"/>
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="45"/>
           <br><br>
-          ![snake github contribution](https://raw.githubusercontent.com/Fenrir1011/Fenrir1011/output/github-contribution-grid-snake-dark.svg)
         </td>
       </tr>
     </tbody>
   </table>
+  ![snake github contribution](https://raw.githubusercontent.com/Fenrir1011/Fenrir1011/output/github-contribution-grid-snake-dark.svg)
   <br>
