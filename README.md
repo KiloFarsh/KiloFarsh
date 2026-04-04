@@ -31,12 +31,3 @@
   </table>
 
   <br>
-
-  <h2>📊 GitHub Activity</h2>
-  <img src="https://github-readme-stats.vercel.app/api?username=Fenrir1011&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117" width="400"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Fenrir1011&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117" width="300"/>
-
-  <br>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Fenrir1011&theme=github-compact&hide_border=true&bg_color=0d1117" width="95%"/>
-
-</div>
