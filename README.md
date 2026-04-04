@@ -29,5 +29,9 @@
       </tr>
     </tbody>
   </table>
-  ![snake github contribution](https://raw.githubusercontent.com/Fenrir1011/Fenrir1011/output/github-contribution-grid-snake-dark.svg)
+ <br>
+
+  <h2>🐍 Contribution Snake</h2>
+  <img src="https://raw.githubusercontent.com/Fenrir1011/Fenrir1011/output/github-contribution-grid-snake-dark.svg" width="100%" />
+
   <br>
