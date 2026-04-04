@@ -17,7 +17,6 @@
             <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70707&center=true&vCenter=true&width=435&lines=Developer+Stack" alt="Typing SVG" />
           </a>
           <br><br>
-          
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="45"/>
           <img width="15"/>
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" height="45"/>
