@@ -6,7 +6,7 @@
     <thead>
       <tr>
         <th align="left">KiloFarsh</th>
-        <th align="right">│⠀⠀🗕⠀⠀│⠀⠀🗗⠀⠀│⠀⠀🗙⠀⠀│</th>
+        <th align="right">│⠀⠀—⠀⠀│⠀⠀🗗⠀⠀│⠀⠀🗙⠀⠀│</th>
       </tr>
     </thead>
     <tbody>
