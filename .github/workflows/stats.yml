@@ -21,7 +21,6 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: 'output'
-          # Если ветки output вообще нет, скрипт автоматически создаст её из main
         continue-on-error: true
 
       # Если ветки output нет, скачиваем main
@@ -37,13 +36,10 @@ jobs:
           # Скачиваем общую статистику
           curl -o github-stats.svg "https://github-readme-stats.vercel.app/api?username=KiloFarsh&show_icons=true&theme=dark&hide_border=true"
           
-          # Скачиваем языки (прячем HTML)
-          curl -o github-top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=KiloFarsh&layout=compact&theme=dark&hide_border=true&hide=html&exclude_repo=KiloFarsh"
-          
-          # Меняем "Lua" на "Luau"
-          sed -i 's/>Lua</>Luau</g' github-top-langs.svg
+          # Скачиваем языки (без скрытия HTML и других замен)
+          curl -o github-top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=KiloFarsh&layout=compact&theme=dark&hide_border=true&exclude_repo=KiloFarsh"
 
-      # 3. Пушим файлы напрямую стандартным Git-командой
+      # 3. Пушим файлы напрямую стандартной Git-командой
       - name: Commit and Push to output branch
         run: |
           git config --global user.name "github-actions[bot]"
