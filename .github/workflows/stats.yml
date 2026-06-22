@@ -1,37 +1,4 @@
-name: generate github stats
-
-on:
-  schedule:
-    - cron: "0 0 * * *" # Запуск каждый день в полночь
-  workflow_dispatch: # Кнопка ручного запуска
-  push:
-    branches:
-      - main
-
-jobs:
-  generate-stats:
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-
-    steps:
-      # 1. Скачиваем репозиторий
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          ref: 'main'
-
-      # 2. Скачиваем актуальные карточки статистики
-      - name: Generate SVGs
-        run: |
-          # Скачиваем общую статистику
-          curl -o github-stats.svg "https://github-readme-stats.vercel.app/api?username=KiloFarsh&show_icons=true&theme=dark&hide_border=true"
-          
-          # Скачиваем языки (HTML теперь вернется)
-          curl -o github-top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=KiloFarsh&layout=compact&theme=dark&hide_border=true&exclude_repo=KiloFarsh"
-
-      # 3. Пушим файлы в ветку output стандартными командами Git
+# 3. Пушим файлы в ветку output стандартными командами Git
       - name: Commit and Push to output branch
         run: |
           git config --global user.name "github-actions[bot]"
@@ -55,4 +22,6 @@ jobs:
           git add github-stats.svg github-top-langs.svg
           
           git commit -m "Update GitHub Statistics" || exit 0
-          git push origin output --force
+          
+          # Пробиваем блокировку принудительным пушем HEAD
+          git push origin HEAD:output --force
