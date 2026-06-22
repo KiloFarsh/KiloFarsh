@@ -1,7 +1,5 @@
 <div align="center">
 
-
-
   <table>
     <thead>
       <tr>
@@ -24,6 +22,8 @@
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="45"/>
           <img width="15"/>
           <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/visual_studio_code.png" height="45"/>
+          <img width="15"/>
+          <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/refs/heads/main/icons/RobloxStudio.svg" height="45"/>
           <br><br>
         </td>
       </tr>
@@ -34,4 +34,4 @@
   <h2>🐍 Contribution</h2>
   <img src="https://raw.githubusercontent.com/Fenrir1011/Fenrir1011/output/github-contribution-grid-snake-dark.svg" width="100%" />
 
-  <br>
+ <br>
