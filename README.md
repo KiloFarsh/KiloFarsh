@@ -41,3 +41,5 @@
   <img src="https://raw.githubusercontent.com/Fenrir1011/Fenrir1011/output/github-contribution-grid-snake-dark.svg" width="100%" />
 
   <br>
+
+<img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FKiloFarsh&label=VIEWS&countColor=%23f70707&style=flat-square" alt="Views"/>
