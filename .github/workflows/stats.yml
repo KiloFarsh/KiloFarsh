@@ -16,16 +16,8 @@ jobs:
     timeout-minutes: 5
 
     steps:
-      # 1. Скачиваем репозиторий (переключаемся на ветку output, если она есть)
+      # 1. Скачиваем репозиторий
       - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          ref: 'output'
-        continue-on-error: true
-
-      # Если ветки output нет, скачиваем main
-      - name: Checkout main if output doesn't exist
-        if: ${{ failure() || steps.checkout.outcome == 'failure' }}
         uses: actions/checkout@v3
         with:
           ref: 'main'
@@ -36,20 +28,30 @@ jobs:
           # Скачиваем общую статистику
           curl -o github-stats.svg "https://github-readme-stats.vercel.app/api?username=KiloFarsh&show_icons=true&theme=dark&hide_border=true"
           
-          # Скачиваем языки (без скрытия HTML и других замен)
+          # Скачиваем языки (HTML теперь вернется)
           curl -o github-top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=KiloFarsh&layout=compact&theme=dark&hide_border=true&exclude_repo=KiloFarsh"
 
-      # 3. Пушим файлы напрямую стандартной Git-командой
+      # 3. Пушим файлы в ветку output стандартными командами Git
       - name: Commit and Push to output branch
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # Переключаемся на сиротскую ветку output (чтобы хранить только картинки)
-          git checkout --orphan output || git checkout output
+          # Создаем временную чистую папку, переносим туда только наши новые SVG
+          mkdir ../temp_stats
+          mv github-stats.svg github-top-langs.svg ../temp_stats/
           
-          # Оставляем только нужные файлы статистики
-          git keep github-stats.svg github-top-langs.svg 2>/dev/null || true
+          # Переключаемся на ветку output (если её нет — создаем)
+          git fetch origin
+          git checkout output || git checkout -b output
+          
+          # Удаляем старые файлы в этой ветке, чтобы заменить их новыми
+          rm -f github-stats.svg github-top-langs.svg
+          
+          # Возвращаем новые файлы обратно
+          mv ../temp_stats/* .
+          
+          # Добавляем их в коммит
           git add github-stats.svg github-top-langs.svg
           
           git commit -m "Update GitHub Statistics" || exit 0
