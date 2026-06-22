@@ -31,9 +31,9 @@
   </table>
  <br>
 
-  <h2>📊 GitHub Stats</h2>
-  <img src="https://github-readme-stats.vercel.app/api?username=KiloFarsh&show_icons=true&theme=dark&hide_border=true" height="150" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KiloFarsh&layout=compact&theme=dark&hide_border=true" height="150" />
+<h2>📊 GitHub Stats</h2>
+  <img src="https://raw.githubusercontent.com/KiloFarsh/KiloFarsh/output/github-stats.svg" height="150" />
+  <img src="https://raw.githubusercontent.com/KiloFarsh/KiloFarsh/output/github-top-langs.svg" height="150" />
 
   <br><br>
 
