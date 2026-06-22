@@ -1,0 +1,47 @@
+name: generate github stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch: # Позволяет запускать вручную через вкладку Actions
+  push:
+    branches:
+      - main
+
+jobs:
+  generate-stats:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      # 1. Скачиваем репозиторий
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Создаем папку для картинок
+      - name: Create dist directory
+        run: mkdir -p dist
+
+      # 3. Скачиваем актуальную карточку общей статистики
+      - name: Generate General Stats SVG
+        run: |
+          curl -o dist/github-stats.svg "https://github-readme-stats.vercel.app/api?username=KiloFarsh&show_icons=true&theme=dark&hide_border=true"
+
+      # 4. Скачиваем актуальную карточку языков (с подменой Lua на Luau и скрытием HTML)
+      - name: Generate Top Languages SVG
+        run: |
+          curl -o dist/github-top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=KiloFarsh&layout=compact&theme=dark&hide_border=true&hide=html&exclude_repo=KiloFarsh"
+          # Магия замены текста внутри SVG: меняем отображение "Lua" на "Luau"
+          sed -i 's/>Lua</>Luau</g' dist/github-top-langs.svg
+
+      # 5. Отправляем оба готовых SVG-файла в ветку output
+      - name: Push SVGs to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_files: true # Важно! Чтобы этот экшен не удалил твою змейку из ветки output
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
