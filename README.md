@@ -31,9 +31,10 @@
   </table>
  <br>
 
-<h2>📊 GitHub Stats</h2>
-  <img src="https://raw.githubusercontent.com/KiloFarsh/KiloFarsh/output/github-stats.svg" height="150" />
-  <img src="https://raw.githubusercontent.com/KiloFarsh/KiloFarsh/output/github-top-langs.svg" height="150" />
+### 📊 GitHub Stats
+
+![GitHub Stats](github-stats.svg)
+![Top Languages](github-top-langs.svg)
 
   <br><br>
 
