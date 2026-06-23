@@ -31,7 +31,7 @@
   </table>
  <br>
 
-### 📊 GitHub Stats
+<h2>📊 GitHub Stats</h2>
 
 ![GitHub Stats](github-stats.svg)
 ![Top Languages](github-top-langs.svg)
