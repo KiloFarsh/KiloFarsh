@@ -10,35 +10,27 @@ on:
 
 jobs:
   generate-stats:
-    permissions:
-      contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
     steps:
-      - name: Checkout main branch
+      # 1. Скачиваем репозиторий
+      - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          ref: 'main'
+          persist-credentials: false
+          fetch-depth: 0
 
+      # 2. Скачиваем актуальные карточки статистики прямо в корень
       - name: Generate SVGs
         run: |
           curl -o github-stats.svg "https://github-readme-stats.vercel.app/api?username=KiloFarsh&show_icons=true&theme=dark&hide_border=true"
           curl -o github-top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=KiloFarsh&layout=compact&theme=dark&hide_border=true&exclude_repo=KiloFarsh"
 
-      - name: Commit and Push to output branch
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          
-          # Создаем чистую независимую ветку прямо из текущих файлов
-          git checkout --orphan output-clean
-          git rm -rf . --cached 2>/dev/null || true
-          
-          # Индексируем только наши сгенерированные карточки
-          git add github-stats.svg github-top-langs.svg
-          
-          git commit -m "Update GitHub Statistics" || exit 0
-          
-          # Принудительно перезаписываем ветку output на сервере
-          git push origin output-clean:output --force
+      # 3. Сохраняем файлы в отдельную ветку output с помощью проверенного экшена
+      - name: Commit & Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: 'output'
+          force: true
