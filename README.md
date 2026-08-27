@@ -26,6 +26,8 @@
       </tr>
     </tbody>
   </table>
+
+  <br><br>
 </div>
 
   <h2>🐍 Contribution</h2>
