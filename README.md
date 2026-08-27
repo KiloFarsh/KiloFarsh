@@ -31,11 +31,6 @@
   </table>
  <br>
 
-<h2>📊 GitHub Stats</h2>
-
-![GitHub Stats](github-stats.svg)
-![Top Languages](github-top-langs.svg)
-
   <br><br>
 
   <h2>🐍 Contribution</h2>
